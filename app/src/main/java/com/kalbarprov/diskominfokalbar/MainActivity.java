@@ -10,6 +10,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.github.chrisbanes.photoview.PhotoView;
+import com.github.chrisbanes.photoview.PhotoViewAttacher;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageView imgStruktur;
@@ -18,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         imgStruktur = findViewById(R.id.struktur_organisasi);
         imgStruktur.setOnClickListener(new View.OnClickListener() {
             @Override
