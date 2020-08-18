@@ -35,7 +35,8 @@ public class BeritaActivity extends AppCompatActivity {
 
         rvBerita = findViewById(R.id.rv_berita);
         lmBerita = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-
+        rvBerita.setLayoutManager(lmBerita);
+        retrieveBerita();
 
     }
 

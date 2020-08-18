@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroServer {
-    private static final String baseURL = "http://kalbarprov.go.id/APIs/kalbarberita-API/";
+    private static final String baseURL = "http://kalbarprov.go.id/APIs/kalbarberita-API/json/";
     private static Retrofit retrofit;
 
     public static Retrofit connectRetrofit(){

@@ -5,6 +5,6 @@ import retrofit2.http.GET;
 
 public interface APIRequestData {
 
-    @GET("json/2020/")
+    @GET("2020")
     Call<ResponseModel> ardRetrieveData();
 }
