@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/foto_struktur"
+            android:src="@drawable/profilecompany" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/foto_struktur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/struktur_nama"
+            android:text="Nama" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/struktur_nama"
+            android:layout_toRightOf="@id/foto_struktur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/struktur_jabatan"
+            android:textStyle="bold"
+            android:text="Jabatan" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/struktur_jabatan"
+            android:layout_toRightOf="@id/foto_struktur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/struktur_nip"
+            android:text="NIP" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

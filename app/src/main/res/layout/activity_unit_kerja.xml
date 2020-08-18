@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        tools:context=".unitkerja.UnitKerjaActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Unit Kerja"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_Sekretariat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/foto_Sekretariat"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/office" />
+
+                <TextView
+                    android:id="@+id/tx_Sekretariat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/foto_Sekretariat"
+                    android:text="Sekretariat"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_InformasiPublik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/foto_InformasiPublik"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/office" />
+
+                <TextView
+                    android:id="@+id/tx_InformasiPublik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/foto_InformasiPublik"
+                    android:text="Bidang Informasi Publik"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_AplikasiInformatika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/foto_AplikasiInformatika"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/office" />
+
+                <TextView
+                    android:id="@+id/tx_AplikasiInformatika"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/foto_AplikasiInformatika"
+                    android:text="Bidang Aplikasi Informatika"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_KomunikasiPublik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/foto_KomunikasiPublik"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/office" />
+
+                <TextView
+                    android:id="@+id/tx_KomunikasiPublik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/foto_KomunikasiPublik"
+                    android:text="Bidang Komunikasi Publik"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_PersandianStatistik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/foto_PersandianStatistik"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="12dp"
+                    android:src="@drawable/office" />
+
+                <TextView
+                    android:id="@+id/tx_PersandianStatistik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/foto_PersandianStatistik"
+                    android:text="Bidang Persandian dan Statistik"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
