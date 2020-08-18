@@ -1,71 +1,97 @@
 package com.kalbarprov.diskominfokalbar.berita;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class BeritaModel {
 
-    private String news_title, news_slug, news_image, news_url, news_sinopsis, news_datacreate, news_user;
-    private int news_view;
+    @SerializedName("news_title")
+    @Expose
+    private String newsTitle;
+    @SerializedName("news_slug")
+    @Expose
+    private String newsSlug;
+    @SerializedName("news_url")
+    @Expose
+    private String newsUrl;
+    @SerializedName("news_image")
+    @Expose
+    private String newsImage;
+    @SerializedName("news_view")
+    @Expose
+    private Integer newsView;
+    @SerializedName("news_sinopsis")
+    @Expose
+    private String newsSinopsis;
+    @SerializedName("news_datecreate")
+    @Expose
+    private String newsDatecreate;
+    @SerializedName("news_user")
+    @Expose
+    private String newsUser;
 
-    public String getNews_title() {
-        return news_title;
+    public String getNewsTitle() {
+        return newsTitle;
     }
 
-    public void setNews_title(String news_title) {
-        this.news_title = news_title;
+    public void setNewsTitle(String newsTitle) {
+        this.newsTitle = newsTitle;
     }
 
-    public String getNews_slug() {
-        return news_slug;
+    public String getNewsSlug() {
+        return newsSlug;
     }
 
-    public void setNews_slug(String news_slug) {
-        this.news_slug = news_slug;
+    public void setNewsSlug(String newsSlug) {
+        this.newsSlug = newsSlug;
     }
 
-    public String getNews_image() {
-        return news_image;
+    public String getNewsUrl() {
+        return newsUrl;
     }
 
-    public void setNews_image(String news_image) {
-        this.news_image = news_image;
+    public void setNewsUrl(String newsUrl) {
+        this.newsUrl = newsUrl;
     }
 
-    public String getNews_url() {
-        return news_url;
+    public String getNewsImage() {
+        return newsImage;
     }
 
-    public void setNews_url(String news_url) {
-        this.news_url = news_url;
+    public void setNewsImage(String newsImage) {
+        this.newsImage = newsImage;
     }
 
-    public String getNews_sinopsis() {
-        return news_sinopsis;
+    public Integer getNewsView() {
+        return newsView;
     }
 
-    public void setNews_sinopsis(String news_sinopsis) {
-        this.news_sinopsis = news_sinopsis;
+    public void setNewsView(Integer newsView) {
+        this.newsView = newsView;
     }
 
-    public String getNews_datacreate() {
-        return news_datacreate;
+    public String getNewsSinopsis() {
+        return newsSinopsis;
     }
 
-    public void setNews_datacreate(String news_datacreate) {
-        this.news_datacreate = news_datacreate;
+    public void setNewsSinopsis(String newsSinopsis) {
+        this.newsSinopsis = newsSinopsis;
     }
 
-    public String getNews_user() {
-        return news_user;
+    public String getNewsDatecreate() {
+        return newsDatecreate;
     }
 
-    public void setNews_user(String news_user) {
-        this.news_user = news_user;
+    public void setNewsDatecreate(String newsDatecreate) {
+        this.newsDatecreate = newsDatecreate;
     }
 
-    public int getNews_view() {
-        return news_view;
+    public String getNewsUser() {
+        return newsUser;
     }
 
-    public void setNews_view(int news_view) {
-        this.news_view = news_view;
+    public void setNewsUser(String newsUser) {
+        this.newsUser = newsUser;
     }
+
 }

@@ -1,11 +1,12 @@
 package com.kalbarprov.diskominfokalbar.berita;
 
+import okhttp3.HttpUrl;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroServer {
-    private static final String baseURL = "http://kalbarprov.go.id/APIs/kalbarberita-API/json/";
-    private static Retrofit retrofit;
+    private static final String baseURL = "https://kalbarprov.go.id/APIs/kalbarberita-API/json/";
+    private static Retrofit retrofit = null;
 
     public static Retrofit connectRetrofit(){
         if(retrofit == null){

@@ -34,13 +34,13 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.HolderBeri
     @Override
     public void onBindViewHolder(@NonNull HolderBerita holder, int position) {
         BeritaModel beritaModel = listBerita.get(position);
-        holder.tvJudul.setText(beritaModel.getNews_title());
-        holder.tvSlug.setText(beritaModel.getNews_slug());
-        holder.tvImage.setText(beritaModel.getNews_image());
-        holder.tvUrl.setText(beritaModel.getNews_url());
-        holder.tvSinopsis.setText(beritaModel.getNews_sinopsis());
-        holder.tvDatacreate.setText(beritaModel.getNews_datacreate());
-        holder.tvUser.setText(beritaModel.getNews_user());
+        holder.tvJudul.setText(beritaModel.getNewsTitle());
+        holder.tvSlug.setText(beritaModel.getNewsSlug());
+        holder.tvImage.setText(beritaModel.getNewsImage());
+        holder.tvUrl.setText(beritaModel.getNewsUrl());
+        holder.tvSinopsis.setText(beritaModel.getNewsSinopsis());
+        holder.tvDatacreate.setText(beritaModel.getNewsDatecreate());
+        holder.tvUser.setText(beritaModel.getNewsUser());
     }
 
     @Override

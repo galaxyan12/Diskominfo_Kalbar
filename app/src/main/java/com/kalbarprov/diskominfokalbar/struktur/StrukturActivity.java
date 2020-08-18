@@ -39,7 +39,7 @@ public class StrukturActivity extends AppCompatActivity {
         strukturOrganisasiArrayList = new ArrayList<>();
         strukturOrganisasiArrayList.add(new StrukturOrganisasi("Ir. Sukaliman, MT","KEPALA DINAS", "196307101989091002"));
         strukturOrganisasiArrayList.add(new StrukturOrganisasi("Drs. Alfian, M.Si","SEKRETARIS", "196502101986031016"));
-        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Calvario Mandayu S.STP,M.Sii","KASUBBAG RENJA DAN MONEV", "199004132010101001"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Calvario Mandayu S.STP, M.Sii","KASUBBAG RENJA DAN MONEV", "199004132010101001"));
         strukturOrganisasiArrayList.add(new StrukturOrganisasi("Arif Setia Putra, S.Kom, MM","KASUBBAG UMUM DAN APARATUR", "198602162010011005"));
         strukturOrganisasiArrayList.add(new StrukturOrganisasi("Mariasyih, S.Sos","KASUBBAG KEUANGAN DAN ASET", "196511121992032007"));
         strukturOrganisasiArrayList.add(new StrukturOrganisasi("Drs. Rene Rienaldy, M.Si","KABID. INFORMASI PUBLIK", "197103141989031001"));
