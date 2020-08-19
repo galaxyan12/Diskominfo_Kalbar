@@ -16,7 +16,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCyMhXruDbZ0jaoPQdlQXZwtg6qb2xOueQ" />
 
-        <activity android:name=".BeritaActivity"/>
+        <activity android:name=".BeritaActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".unitkerja.UnitKerjaPersandianStatistikActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />

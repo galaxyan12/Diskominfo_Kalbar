@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.kalbarprov.diskominfokalbar.berita.APIRequestData;
@@ -27,6 +29,7 @@ public class BeritaActivity extends AppCompatActivity {
     private RecyclerView.Adapter adBerita;
     private RecyclerView.LayoutManager lmBerita;
     private List<BeritaModel> listBerita = new ArrayList<>();
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,7 @@ public class BeritaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_berita);
 
         rvBerita = findViewById(R.id.rv_berita);
+        progressBar = findViewById(R.id.progress_Berita);
         lmBerita = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvBerita.setLayoutManager(lmBerita);
         retrieveBerita();
@@ -54,6 +58,7 @@ public class BeritaActivity extends AppCompatActivity {
                 listBerita = response.body().getContent();
 
                 adBerita = new BeritaAdapter(BeritaActivity.this, listBerita);
+                progressBar.setVisibility(View.GONE);
                 rvBerita.setAdapter(adBerita);
                 adBerita.notifyDataSetChanged();
             }

@@ -1,55 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="6dp">
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_image" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_judul"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
             android:text="Judul"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_slug"
+            android:visibility="gone"
             android:text="Slug" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_image"
+            android:visibility="gone"
             android:text="Image"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Url"
+            android:visibility="gone"
             android:id="@+id/tv_url" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sinopsis"
+            android:visibility="gone"
             android:id="@+id/tv_sinopsis" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Datacreate"
+            android:layout_marginLeft="8dp"
             android:id="@+id/tv_datacreate" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="User"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
             android:id="@+id/tv_user" />
 
     </LinearLayout>

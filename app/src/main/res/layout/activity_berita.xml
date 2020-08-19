@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="6dp"
     tools:context=".BeritaActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -11,5 +12,14 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/row_berita"
         android:id="@+id/rv_berita" />
+
+    <ProgressBar
+        android:id="@+id/progress_Berita"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        style="?android:attr/progressBarStyle"
+        android:max="100"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

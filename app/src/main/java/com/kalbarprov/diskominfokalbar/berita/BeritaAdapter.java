@@ -4,11 +4,13 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.kalbarprov.diskominfokalbar.R;
 
 import java.util.List;
@@ -26,9 +28,12 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.HolderBeri
     @NonNull
     @Override
     public HolderBerita onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View layout = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_berita, parent, false);
-        HolderBerita holderBerita = new HolderBerita(layout);
-        return holderBerita;
+        View view;
+        LayoutInflater inflater = LayoutInflater.from(context);
+        view = inflater.inflate(R.layout.row_berita, parent, false);
+//        View layout = LayoutInflater.from(parent.getContext()).inflate(R.layout.row_berita, parent, false);
+//        HolderBerita holderBerita = new HolderBerita(layout);
+        return new HolderBerita(view);
     }
 
     @Override
@@ -36,7 +41,7 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.HolderBeri
         BeritaModel beritaModel = listBerita.get(position);
         holder.tvJudul.setText(beritaModel.getNewsTitle());
         holder.tvSlug.setText(beritaModel.getNewsSlug());
-        holder.tvImage.setText(beritaModel.getNewsImage());
+        Glide.with(context).load(beritaModel.getNewsImage()).into(holder.ivImage);
         holder.tvUrl.setText(beritaModel.getNewsUrl());
         holder.tvSinopsis.setText(beritaModel.getNewsSinopsis());
         holder.tvDatacreate.setText(beritaModel.getNewsDatecreate());
@@ -50,6 +55,7 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.HolderBeri
 
     public class HolderBerita extends RecyclerView.ViewHolder {
         TextView tvJudul, tvSlug, tvImage, tvUrl, tvSinopsis, tvDatacreate, tvUser;
+        ImageView ivImage;
 
         public HolderBerita(@NonNull View itemView) {
             super(itemView);
@@ -57,6 +63,7 @@ public class BeritaAdapter extends RecyclerView.Adapter<BeritaAdapter.HolderBeri
             tvJudul = itemView.findViewById(R.id.tv_judul);
             tvSlug = itemView.findViewById(R.id.tv_slug);
             tvImage = itemView.findViewById(R.id.tv_image);
+            ivImage = itemView.findViewById(R.id.iv_image);
             tvUrl = itemView.findViewById(R.id.tv_url);
             tvSinopsis = itemView.findViewById(R.id.tv_sinopsis);
             tvDatacreate = itemView.findViewById(R.id.tv_datacreate);
