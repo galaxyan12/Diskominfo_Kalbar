@@ -6,28 +6,20 @@ import com.google.gson.annotations.SerializedName;
 public class BeritaModel {
 
     @SerializedName("news_title")
-    @Expose
     private String newsTitle;
     @SerializedName("news_slug")
-    @Expose
     private String newsSlug;
     @SerializedName("news_url")
-    @Expose
     private String newsUrl;
     @SerializedName("news_image")
-    @Expose
     private String newsImage;
     @SerializedName("news_view")
-    @Expose
     private Integer newsView;
     @SerializedName("news_sinopsis")
-    @Expose
     private String newsSinopsis;
     @SerializedName("news_datecreate")
-    @Expose
     private String newsDatecreate;
     @SerializedName("news_user")
-    @Expose
     private String newsUser;
 
     public String getNewsTitle() {

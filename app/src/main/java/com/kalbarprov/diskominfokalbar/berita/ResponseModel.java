@@ -8,16 +8,12 @@ import java.util.List;
 public class ResponseModel {
 
     @SerializedName("status")
-    @Expose
     private Integer status;
     @SerializedName("code")
-    @Expose
     private Integer code;
     @SerializedName("message")
-    @Expose
     private String message;
     @SerializedName("content")
-    @Expose
     private List<BeritaModel> beritaModel = null;
 
     public Integer getStatus() {
