@@ -11,6 +11,9 @@ public interface APIRequestData {
     @GET("json/2020")
     Call<ResponseModel> ardRetrieveData();
 
+    @GET("json/2020/limit")
+    Call<ResponseModel> ardRetrieveLimit();
+
     @GET
     Call<ResponseDetilModel> ardRetrieveDetil(@Url String slugbaru);
 }

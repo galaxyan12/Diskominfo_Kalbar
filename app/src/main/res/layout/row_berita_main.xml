@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_beritaMain"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_imageMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:layout_below="@id/iv_imageMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/tv_judulMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="6dp"
+                android:text="Judul"
+                android:maxLines="4"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_slugMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slug"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_imageMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Image"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_urlMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Url"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_sinopsisMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sinopsis"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_datacreateMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:visibility="gone"
+                android:text="Datacreate" />
+
+            <TextView
+                android:id="@+id/tv_userMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                android:text="User" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

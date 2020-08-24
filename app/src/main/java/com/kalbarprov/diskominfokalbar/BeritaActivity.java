@@ -50,11 +50,7 @@ public class BeritaActivity extends AppCompatActivity {
         tampilBerita.enqueue(new Callback<ResponseModel>() {
             @Override
             public void onResponse(Call<ResponseModel> call, Response<ResponseModel> response) {
-                int kode = response.body().getCode();
-                String message = response.body().getMessage();
-
                 listBerita = response.body().getContent();
-
                 adBerita = new BeritaAdapter(BeritaActivity.this, listBerita);
                 progressBar.setVisibility(View.GONE);
                 rvBerita.setAdapter(adBerita);
