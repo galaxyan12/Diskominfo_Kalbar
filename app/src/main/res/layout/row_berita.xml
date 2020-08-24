@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/cv_Berita"
+    android:foreground="?android:attr/selectableItemBackground"
     app:cardCornerRadius="6dp"
     app:cardElevation="3dp"
     app:cardUseCompatPadding="true">
@@ -13,63 +17,63 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_marginBottom="4dp"
+            android:id="@+id/iv_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/iv_image" />
+            android:layout_marginBottom="4dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/tv_judul"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginBottom="8dp"
-            android:text="Judul"/>
+            android:text="Judul"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/tv_slug"
-            android:visibility="gone"
-            android:text="Slug" />
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/tv_image"
-            android:visibility="gone"
-            android:text="Image"/>
+            android:text="Slug"
+            android:visibility="gone" />
 
         <TextView
+            android:id="@+id/tv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_url"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Url"
-            android:visibility="gone"
-            android:id="@+id/tv_url" />
+            android:visibility="gone" />
 
         <TextView
+            android:id="@+id/tv_sinopsis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sinopsis"
-            android:visibility="gone"
-            android:id="@+id/tv_sinopsis" />
+            android:visibility="gone" />
 
         <TextView
+            android:id="@+id/tv_datacreate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Datacreate"
-            android:layout_marginLeft="8dp"
-            android:id="@+id/tv_datacreate" />
+            android:layout_marginStart="8dp"
+            android:text="Datacreate" />
 
         <TextView
+            android:id="@+id/tv_user"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginBottom="8dp"
-            android:id="@+id/tv_user" />
+            android:text="User" />
 
     </LinearLayout>
 

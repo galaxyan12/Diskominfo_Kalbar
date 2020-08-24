@@ -53,8 +53,6 @@ public class BeritaActivity extends AppCompatActivity {
                 int kode = response.body().getCode();
                 String message = response.body().getMessage();
 
-                Toast.makeText(BeritaActivity.this, "Code :"+kode+" | Pesan : "+message, Toast.LENGTH_SHORT).show();
-
                 listBerita = response.body().getContent();
 
                 adBerita = new BeritaAdapter(BeritaActivity.this, listBerita);
