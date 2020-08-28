@@ -47,5 +47,16 @@ public class StrukturActivity extends AppCompatActivity {
         strukturOrganisasiArrayList.add(new StrukturOrganisasi("Wiwin Sutiana, ST","KASI. PELAYANAN INFORMASI", "197905022011011002"));
         strukturOrganisasiArrayList.add(new StrukturOrganisasi("Teodolus Teddy Hinggaan, ST","KASI. PENGELOLAAN INFORMASI", "197609032005011008"));
         strukturOrganisasiArrayList.add(new StrukturOrganisasi("Sofiarti Dyah Anggunia, ST, M.Sc","KABID. APLIKASI INFORMATIKA", "198402232006042012"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Arry Yosfani Alnur, S.Kom","KASI. INFRASTRUKTUR DAN TEKNOLOGI, INFORMASI DAN KOMUNIKASI", "197604302006041004"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Meidy Vinandar Pratama, S.STP","KASI. APLIKASI", "199205102014061001"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("M. Adi, S.Kom","KASI. TATA KELOLA STANDAR PEMERINTAHAN BERBASIS ELEKTRONIK", "198110182011011001"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Maria Wijayanti, ST","KABID. KOMUNIKASI PUBLIK", "197301052002122001"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Purnamawati, SH","KASI. LAYANAN HUBUNGAN MEDIA", "196406221985112002"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Arfiandi, SE.MM","KASI. SUMBER DAYA KOMUNIKASI PUBLIK", "197702252000031003"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Heronimus Sonni, S.Kom","KASI. PENGELOLAAN MEDIA KOMUNIKASI PUBLIK", "197802222011011002"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Ir. Teddy Erwanto, M.Sc","KABID. PERSANDIAN DAN STATISTIK", "196307021995021001"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Agus Hasim, ST, M.Si","KASI. PENGELOLA DATA STATISTIK", "196608241998031006"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Sylvia Josepha Maria Pessy, S.IP, MT","KASI. PERSANDIAN DAN KEAMANAN INFORMASI", "196902181989032005"));
+        strukturOrganisasiArrayList.add(new StrukturOrganisasi("Hendra, S.Sos, M.Si","KASI. ANALISIS DATA STATISTIK", "196906121990031003"));
     }
 }

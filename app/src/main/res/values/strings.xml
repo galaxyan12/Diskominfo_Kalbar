@@ -9,4 +9,17 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="titleDiskominfo">Dinas Komunikasi dan Informatika Pemerintah Provinsi Kalimantan Barat</string>
+    <string name="alamatDiskominfo">Jl. Adi Sucipto No. 50 Pontianak</string>
+    <string name="telpDiskominfo">Telp. (0561) 8173627</string>
+    <string name="faxDiskominfo">Fax (0561) 8177548</string>
+    <string name="emailDiskominfo">E-Mail : diskominfo@kalbarprov.go.id</string>
+    <string name="misiDiskominfo">
+        <li> Menguwujudkan percepatan pembangunan insfrastruktur\n\n</li>
+        <li> Mengwujudkan tata kelola pemerintahan berkualitas dengan prinsip-prinsip governance\n\n</li>
+        <li> Mengwujudkan kualitas hidup masyarakat\n\n</li>
+        <li> Mengwujudkan masyarakat sejahtera\n\n</li>
+        <li> Mengwujudkan masyarakat yang tertib\n\n</li>
+        <li> Mengwujudkan pembangunan berwawasan lingkungan</li>
+    </string>
 </resources>

@@ -1,4 +1,4 @@
-package com.kalbarprov.diskominfokalbar;
+package com.kalbarprov.diskominfokalbar.berita;
 
 import android.os.Bundle;
 import android.text.Html;
@@ -9,12 +9,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.kalbarprov.diskominfokalbar.berita.APIRequestData;
-import com.kalbarprov.diskominfokalbar.berita.DetilModel;
-import com.kalbarprov.diskominfokalbar.berita.ResponseDetilModel;
-import com.kalbarprov.diskominfokalbar.berita.RetroServer;
+import com.kalbarprov.diskominfokalbar.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;

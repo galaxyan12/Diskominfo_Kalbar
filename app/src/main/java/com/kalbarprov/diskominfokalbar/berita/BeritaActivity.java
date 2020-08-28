@@ -1,4 +1,4 @@
-package com.kalbarprov.diskominfokalbar;
+package com.kalbarprov.diskominfokalbar.berita;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -6,15 +6,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.kalbarprov.diskominfokalbar.berita.APIRequestData;
-import com.kalbarprov.diskominfokalbar.berita.BeritaAdapter;
-import com.kalbarprov.diskominfokalbar.berita.BeritaModel;
-import com.kalbarprov.diskominfokalbar.berita.ResponseModel;
-import com.kalbarprov.diskominfokalbar.berita.RetroServer;
+import com.kalbarprov.diskominfokalbar.R;
 
 import java.util.ArrayList;
 import java.util.List;

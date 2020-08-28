@@ -13,7 +13,6 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.kalbarprov.diskominfokalbar.BeritaDetilActivity;
 import com.kalbarprov.diskominfokalbar.R;
 
 import java.util.List;

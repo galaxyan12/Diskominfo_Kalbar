@@ -12,6 +12,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.kalbarprov.diskominfokalbar.berita.APIRequestData;
+import com.kalbarprov.diskominfokalbar.berita.BeritaActivity;
 import com.kalbarprov.diskominfokalbar.berita.BeritaBaruAdapter;
 import com.kalbarprov.diskominfokalbar.berita.BeritaModel;
 import com.kalbarprov.diskominfokalbar.berita.ResponseModel;
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager lmBeritaMain;
     private List<BeritaModel> beritaModelList = new ArrayList<>();
     private ProgressBar progressBarmain;
-    ImageView imgStruktur, imgUniker, imgBerita;
+    ImageView imgStruktur, imgUniker, imgBerita, imgAlamat, imgVisimisi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
         imgStruktur = findViewById(R.id.struktur_organisasi);
         imgUniker = findViewById(R.id.unit_kerja);
         imgBerita = findViewById(R.id.berita);
+        imgAlamat = findViewById(R.id.imgAlamat);
+        imgVisimisi = findViewById(R.id.visi_misi);
         progressBarmain = findViewById(R.id.progress_Beritamain);
         imgStruktur.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, StrukturActivity.class);
@@ -54,6 +57,14 @@ public class MainActivity extends AppCompatActivity {
         });
         imgBerita.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, BeritaActivity.class);
+            startActivity(intent);
+        });
+        imgAlamat.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, AlamatActivity.class);
+            startActivity(intent);
+        });
+        imgVisimisi.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, VisiMisiActivity.class );
             startActivity(intent);
         });
 

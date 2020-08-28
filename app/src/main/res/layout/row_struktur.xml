@@ -18,8 +18,9 @@
             android:layout_centerVertical="true"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:cropToPadding="true"
             android:id="@+id/foto_struktur"
-            android:src="@drawable/profilecompany" />
+            android:src="@drawable/businessman" />
 
         <TextView
             android:layout_marginLeft="8dp"
